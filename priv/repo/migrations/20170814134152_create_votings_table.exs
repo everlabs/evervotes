@@ -6,6 +6,8 @@ defmodule EvervotesApi.Repo.Migrations.CreateVotingsTable do
       add :title, :string
       add :description, :text
       add  :multiple, :boolean
+
+      timestamps()
     end
   end
 end
