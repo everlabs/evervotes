@@ -10,14 +10,14 @@ defmodule EvervotesApi.Router do
   # end
 
   pipeline :api do
-    plug :accepts, ["json", "json-api"]
+    plug :accepts, ["json"]
   end
 
   scope "/api", EvervotesApi do
 
     pipe_through :api # Use the default browser stack
 
-    get "/", PageController, :index
+    resources "/", VotingsController
   end
 
   # Other scopes may use custom stacks.

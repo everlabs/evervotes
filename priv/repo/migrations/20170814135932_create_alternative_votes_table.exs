@@ -4,7 +4,7 @@ defmodule EvervotesApi.Repo.Migrations.CreateAlternativeVotesTable do
   def change do
     create table(:alternative_votes) do
       add :user, :integer
-      add :content, :text
+      add :content, :string
       add :voning_id, references(:votings)
 
       timestamps()
