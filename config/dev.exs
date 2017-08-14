@@ -49,8 +49,8 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :evervotes_api, EvervotesApi.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "denysnorman",
+  password: "",
   database: "evervotes_api_dev",
   hostname: "localhost",
   pool_size: 10
